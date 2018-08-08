@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/bootstrap.css">
+
+    <link rel="stylesheet" href="static/css/style.css">
+    <title>School of Start up 2018</title>
+  </head>
+  <body>
+    <!-- START HERE -->
+    <nav id="mainNav" class="navbar navbar-expand-md navbar-light fixed-top py-3">
+      <div class="container">
+        <a href="/" class="navbar-brand">
+          <img src="static/img/Shortcut_logo_RGB_black.png" alt="shortcutlogo" width="150" height="50">
+          <img src="static/img/logo SOS School of Startups-07.png" alt="shortcutlogo" width="150" height="50">
+        </a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navColl">
+          <i class="navbar-toggler-icon"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navColl">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="/" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="/detail" class="nav-link">Schedule</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">About Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+{%block content%}
+    <section id="heading" class="py-5">
+      <div class="prime-overlay text-white">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 ml-auto pt-5 text-right">
+              <h1>Read more</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-secondary py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <h1>The School of Startups Tracks</h1>
+            <p class="lead">The Shortcut School of Startups is a three-week long series of workshops, which will provide participants with necessary skills to take their ideas further and/or test where their journey starts in the startup world.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card text-center border-primary">
+              <div class="card-body justify-content-center">
+                <img src="static/img/Clean tracks and arrows-04.png" alt="track1" class="img-fluid pos-rel">
+                <div class="pos-abs p-5">
+                  <h1 class="text-center">Business<br> Track</h1>
+                  <!-- <button data-toggle='modal' data-target='#biztrack' class="btn btn-warning btn-lg mt-5">Schedule</button> -->
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card text-center border-primary">
+              <div class="card-body justify-content-center">
+                <img src="static/img/Clean tracks and arrows-05.png" alt="track2" class="img-fluid pos-rel">
+                <div class="pos-abs p-5">
+                  <h1 class="text-center">Design<br> Track</h1>
+                  <!-- <button data-toggle='modal' data-target='#destrack' class="btn btn-warning btn-lg mt-5">Schedule</button> -->
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card text-center border-primary">
+              <div class="card-body justify-content-center">
+                <img src="static/img/Clean tracks and arrows-03.png" alt="track3" class="img-fluid pos-rel">
+                <div class="pos-abs p-5">
+                  <h1 class="text-center">Tech <br> Track</h1>
+                  <!-- <button data-toggle='modal' data-target='#tectrack' class="btn btn-warning btn-lg mt-5">Schedule</button> -->
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center py-3">
+          <a href="/detail" class="btn btn-warning btn-lg">See Details</a>
+        </div>
+      </div>
+    </section>
+    <!-- MODALS -->
+    <!-- <div class="modal fade" id='biztrack'> -->
+      <!-- <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Business Track</h5>
+            <button class="close" data-dismiss='modal'>&times;</button>
+          </div>
+          <div class="modal-body">
+            <table class="table">
+              <thead>
+                <th></th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+              </thead>
+              <tr>
+                <td>Lab</td>
+                <td>
+                  Legalities involved in a startup
+                  <br>
+                  <a data-toggle='modal' data-target='#speaker'>Speaker</a>
+                </td>
+                <td>
+                  Business development for Startups</td>
+                <td>
+                  Team Dynamics
+                </td>
+                <td>
+                  Creating a marketing plan for your startup
+                </td>
+                <td>
+                  How Do influencers monetize
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div> -->
+            <!-- SPEAKER -->
+            <!-- <div class="modal fade" id="speaker">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5>Mr.Something</h5>
+                    <div class="card">
+                      <div class="card-body">
+                        <img src="static/img/Clean tracks and arrows-05.png" alt="" class="w-50 rounded-circle">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+    <div class="modal fade" id='destrack'>
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Design Track</h5>
+            <button class="close" data-dismiss='modal'>&times;</button>
+          </div>
+          <div class="modal-body">
+            <table class="table">
+              <thead>
+                <th></th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+              </thead>
+              <tr>
+                <td>Lab</td>
+                <td>
+                  Legalities involved in a startup<br>
+                    - Knowing the ins and outs of the legalities surrounding a startup doer
+                </td>
+                <td>
+                  Business development for Startups
+                </td>
+                <td>
+                  Team Dynamics
+                </td>
+                <td>
+                  Creating a marketing plan for your startup
+                </td>
+                <td>
+                  <p>How Do influencers monetize<br>
+                    - Influencer and company perspective</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id='tectrack'>
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Tech Track</h5>
+            <button class="close" data-dismiss='modal'>&times;</button>
+          </div>
+          <div class="modal-body">
+            <table class="table">
+              <thead>
+                <th></th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+              </thead>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div> -->
+{%endblock content%}
+    <footer id="main-footer" class="py-5 bg-light">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-6 d-flex">
+            <img src="static/img/Shortcut_logo_RGB_black.png" alt="shortcutlogo" width="250" height="120">
+            <p class="lead">Copyright &copy;
+              <span id="year"></span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <script>
+    //Get the current year
+    $('#year').text(new Date().getFullYear());
+
+    </script>
+  </body>
+</html>
