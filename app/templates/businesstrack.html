@@ -1,91 +1,1287 @@
 {%extends 'template.html'%}
+{%block head%}
+<link rel="stylesheet" type="text/css" href="static/css/util.css">
+<link rel="stylesheet" type="text/css" href="static/css/main.css">
+{%endblock head%}
 {%block content%}
-<section id="biz">
-  <div class="container">
-    <!-- IDW -->
-    <div class="row py-5">
-      <div class="col-md-9">
-        <div class="card">
-          <div class="card-header">
-            <h5>Idea Development Weekend</h5>
-          </div>
-          <div class="card-body">
-            <p class="card-text">Description and time table of this week here</p>
-          </div>
-        </div>
+<section id="schedule" class="">
+  <div class="container sticky-top mb-1" id="stickybar">
+    <div class="progress" style="height:50px;">
+      <div class="progress-bar bg-light" style="width:20%">
+        <a href="#test1" class="lead text-muted">IDW</a>
       </div>
-
-      <div class="col-md-3">
-        <div class="card">
-          <div class="card-body">
-            <img src="static/img/Clean tracks and arrows-03.png" alt="idw" class="img-fluid">
-          </div>
-        </div>
+      <div class="progress-bar bg-shortcutred" style="width:20%">
+        <a href="#test2" class="lead text-white">Business Track</a>
+      </div>
+      <div class="progress-bar bg-shortcutgreen" style="width:20%">
+        <a href="#test3" class="lead text-white">Design Track</a>
+      </div>
+      <div class="progress-bar bg-shortcutyellow" style="width:20%">
+        <a href="#test4" class="lead text-white">Tech Track</a>
+      </div>
+      <div class="progress-bar bg-light" style="width:20%">
+        <a href="#test5" class="lead text-muted">DPW</a>
       </div>
     </div>
-    <!-- BIZTRACK -->
-    <div class="row mb-5">
-      <div class="col-md-3">
-        <div class="card">
-          <div class="card-body">
-            <img src="static/img/Clean tracks and arrows-03.png" alt="idw" class="img-fluid">
-          </div>
+  </div>
+  <div class="container-fluid">
+    <!-- IDW -->
+    <div class="row py-5 mb-5 align-items-center justify-content-center" id="test1">
+      <div class="col-9"  id="accordion1">
+        <a href="#idw" data-toggle='collapse' data-parent='#accordion1' class="btn btn-light btn-lg">
+          Idea Development Weekend
+        </a>
+
+          <div class="collapse show" id="idw">
+
+            <!-- SCHEDULE -->
+            <div class="table-repsonsive mt-2">
+              <div class="table100 ver1 m-b-110">
+                <table data-vertable="ver1">
+                    <thead>
+                      <tr class="row100 head">
+                        <th class="column50 column1" data-column="column1"></th>
+                        <th class="column100 column2" data-column="column2">22 September</th>
+                        <th class="column100 column3" data-column="column3">23 September</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="row100">
+
+                        <td class="column50 column1" data-column="column1">10.00</td>
+                        <!-- DAY1 -->
+                        <td class="column100 column2" data-column="column2">
+                          <p>Welcome and Introduction</p>
+                          <p>(The Shortcut and Sponsors)</p>
+                          <p>Introduce Program</p>
+                          <p></p>
+                        </td>
+                        <!-- DAY2 -->
+                        <td class="column100 column3" data-column="column3">
+                          <p>Warm Up</p>
+
+                        </td>
+
+                      </tr>
+
+                      <tr class="row100">
+                        <td class="column50 column1" data-column="column1">10.30</td>
+                        <!-- DAY1 -->
+                        <td class="column100 column2" data-column="column2">
+                          <p>Icebreaking</p>
+                          <p>Teams formation</p>
+                          <p>(8-10 Teams)</p>
+                        </td>
+                        <!-- DAY2 -->
+                        <td class="column100 column3" data-column="column3">
+
+                          <p>Team motivate</p>
+                          <p></p>
+                        </td>
+
+                      </tr>
+
+                      <tr class="row100">
+                        <td class="column50 column1" data-column="column1">11.00</td>
+                        <!-- DAY1 -->
+                        <td class="column100 column2" data-column="column2">
+                          <p>Discover and Define Problems</p>
+                          <p></p>
+                        </td>
+                        <!-- DAY2 -->
+                        <td class="column100 column3" data-column="column3">
+                          <p>Road Map</p>
+                          <p></p>
+                        </td>
+
+                      </tr>
+
+                      <tr class="row100">
+                        <td class="column50 column1" data-column="column1">11.30</td>
+                        <!-- DAY1 -->
+                        <td class="column100 column2" data-column="column2">
+
+                          <p>Customers' pain</p>
+                          <p></p>
+                        </td>
+                        <!-- DAY2 -->
+                        <td class="column50 column3" data-column="column3">
+                          <p>Continue on Ideas</p>
+                          <p>Finalize Ideas</p>
+                        </td>
+
+                      </tr>
+
+                      <tr class="row100">
+                        <td class="column50 column1" data-column="column1">12.00</td>
+                        <!-- DAY1 -->
+                        <td class="column100 column2" data-column="column2">
+
+                          <p>Lunch Break</p>
+                          <p></p>
+                        </td>
+                        <!-- DAY2 -->
+                        <td class="column100 column3" data-column="column3">
+
+                          <p>Lunch Break</p>
+                          <p></p>
+                        </td>
+
+                      </tr>
+
+                      <tr class="row100">
+                        <td class="column50 column1" data-column="column1">13.30</td>
+                        <!-- DAY1 -->
+                        <td class="column100 column2" data-column="column2">
+
+                          <p>Idea creation blueprint</p>
+                          <p></p>
+                        </td>
+                        <!-- DAY2 -->
+                        <td class="column100 column3" data-column="column3">
+
+                          <p></p>
+                          <p></p>
+                        </td>
+
+                      </tr>
+
+                      <tr class="row100">
+                        <td class="column50 column1" data-column="column1">14.00</td>
+                        <!-- DAY1 -->
+                        <td class="column100 column2" data-column="column2">
+
+                          <p>Pitch with coach</p>
+                          <p></p>
+                        </td>
+                        <!-- DAY2 -->
+                        <td class="column100 column3" data-column="column3">
+
+                          <p>Visualize Ideas</p>
+                          <p>Vote for the best idea</p>
+                        </td>
+
+                      </tr>
+
+                      <tr class="row100">
+                        <td class="column50 column1" data-column="column1">15.00</td>
+                        <!-- DAY1 -->
+                        <td class="column100 column2" data-column="column2">
+
+                          <p></p>
+                          <p></p>
+                        </td>
+                        <!-- DAY2 -->
+                        <td class="column100 column3" data-column="column3">
+
+                          <p>Group Recap</p>
+                          <p>Reflection</p>
+                        </td>
+
+                      </tr>
+
+                      <tr class="row100">
+                        <td class="column50 column1" data-column="column1">17.00</td>
+                        <!-- DAY1 -->
+                        <td class="column100 column2" data-column="column2">
+
+                          <p>End of day 1</p>
+                          <p></p>
+                        </td>
+                        <!-- DAY2 -->
+                        <td class="column100 column3" data-column="column3">
+
+                          <p>Ending</p>
+                          <p>Networking</p>
+                        </td>
+
+                      </tr>
+
+                    </tbody>
+                </table>
+              </div>
+            </div>
+
         </div>
       </div>
 
-      <div class="col-md-9">
-        <div class="card">
-          <div class="card-header">
-            <h5>Business Track</h5>
-          </div>
-          <div class="card-body">
-            <p class="card-text">Description and time table of this week here</p>
-          </div>
+    </div>
+    <!-- BIZTRACK -->
+    <div class="row mb-5 align-items-center justify-content-center" id="test2">
+      <div class="col-9" id="accordion">
+        <a href="#biz" data-parent='#accordion' data-toggle='collapse' class="btn btn-shortcutred btn-lg">
+           Business Track
+        </a>
+          <div class="collapse show" id="biz">
+
+              <div class="table-repsonsive mt-2">
+                <div class="table100 ver2 m-b-110">
+                    <!-- SCHEDULE -->
+          					<table data-vertable="ver2">
+          						<thead>
+          							<tr class="row100 head">
+          								<th class="column50 column1" data-column="column1"></th>
+          								<th class="column100 column2" data-column="column2">Lab</th>
+          								<th class="column100 column3" data-column="column3">Upstair</th>
+
+          						</thead>
+          						<tbody>
+          							<tr class="row100">
+          								<td class="column50 column1" data-column="column1">
+                            <p class="lead">Monday</p>
+                            <br>
+                            <a class="btn btn-outline-danger" data-toggle='modal' data-target='#biz1'>
+                              <i class="fas fa-user-secret fa-3x"></i>
+                              <i class="fas fa-user-secret fa-3x"></i>
+                            </a>
+                          </td>
+          								<td class="column100 column2" data-column="column2">
+          									<p>16.00-17.45</p>
+          									<p>Legalities involved in a startup</p>
+                            <hr>
+          									<p>18.00-19.45</p>
+          									<p>Financing 101 Part-1</p>
+          								</td>
+          								<td class="column100 column3" data-column="column3">
+          									<p>16.00-17.45</p>
+          									<p>AI in business</p>
+                            <hr>
+          									<p>18.00-19.45</p>
+          									<p>AI for Marketing</p>
+          								</td>
+
+          							</tr>
+
+          							<tr class="row100">
+                          <td class="column50 column1" data-column="column1">
+                            <p class="lead">Tuesday</p>
+                            <br>
+                            <a class="btn btn-outline-danger" data-toggle='modal' data-target='#biz2'>
+                              <i class="fas fa-user-secret fa-3x"></i>
+                              <i class="fas fa-user-secret fa-3x"></i>
+                            </a>
+                          </td>
+          								<td class="column100 column2" data-column="column2">
+                            <p>16.00-17.45</p>
+          									<p>Business development</p>
+                            <hr>
+          									<p>18.00-19.45</p>
+          									<p>Sales for Startups</p>
+          								</td>
+          								<td class="column100 column3" data-column="column3">
+                            <p>16.00-19.45</p>
+                            <p>Transformative Entreperneurship</p>
+                            <p></p>
+                            <p></p>
+          								</td>
+
+          							</tr>
+
+          							<tr class="row100">
+                          <td class="column50 column1" data-column="column1">
+                            <p class="lead">Wednesday</p>
+                            <br>
+                            <a class="btn btn-outline-danger" data-toggle='modal' data-target='#biz3'>
+                              <i class="fas fa-user-secret fa-3x"></i>
+                              <i class="fas fa-user-secret fa-3x"></i>
+                            </a>
+                          </td>
+          								<td class="column100 column2" data-column="column2">
+                            <p>16.00-19.45</p>
+          									<p>Team Dynamics</p>
+          									<p></p>
+          								</td>
+          								<td class="column100 column3" data-column="column3">
+                            <p>16.00-17.45</p>
+          									<p>Entraperneurial leadership</p>
+                            <hr>
+          									<p>18.00-19.45</p>
+                            <p>Financing 101 Part-2</p>
+          								</td>
+
+          							</tr>
+
+          							<tr class="row100">
+                          <td class="column50 column1" data-column="column1">
+                            <p class="lead">Thursday</p>
+                            <br>
+                            <a class="btn btn-outline-danger" data-toggle='modal' data-target='#biz4'>
+                              <i class="fas fa-user-secret fa-3x"></i>
+                              <i class="fas fa-user-secret fa-3x"></i>
+                            </a>
+                          </td>
+          								<td class="column100 column2" data-column="column2">
+                            <p>16.00-19.45</p>
+          									<p>Creating a marketing plan</p>
+          									<p></p>
+                            <p></p>
+          								</td>
+          								<td class="column50 column3" data-column="column3">
+                            <p>16.00-17.45</p>
+          									<p>Visual approach in social media marketing</p>
+                            <hr>
+          									<p>18.45-19.45</p>
+                            <p>Growth marketing - Tools for scalability</p>
+          								</td>
+
+          							</tr>
+
+          							<tr class="row100">
+                          <td class="column50 column1" data-column="column1">
+                            <p class="lead">Friday</p>
+                            <br>
+                            <a class="btn btn-outline-danger" data-toggle='modal' data-target='#biz5'>
+                              <i class="fas fa-user-secret fa-3x"></i>
+                              <i class="fas fa-user-secret fa-3x"></i>
+                            </a>
+                          </td>
+          								<td class="column100 column2" data-column="column2">
+                            <p>16.00-17.45</p>
+          									<p>How Do influencers monetize</p>
+                            <hr>
+          									<p>18.00-19.45</p>
+                            <p>Digital Marketing for apps</p>
+          								</td>
+          								<td class="column100 column3" data-column="column3">
+                            <p>16.00-17.45</p>
+          									<p>E-comerce - How it works, Customer Mapping and Strategy</p>
+                            <hr>
+          									<p>18.00-19.45</p>
+                            <p>Financing 101 Part-3</p>
+          								</td>
+
+          							</tr>
+
+          						</tbody>
+          					</table>
+                </div>
+              </div>
+
         </div>
       </div>
     </div>
     <!-- DESIGN TRACK -->
-    <div class="row mb-5">
-      <div class="col-md-9">
-        <div class="card">
-          <div class="card-header">
-            <h5>Design Track</h5>
-          </div>
-          <div class="card-body">
-            <p class="card-text">Description and time table of this week here</p>
-          </div>
-        </div>
-      </div>
+    <div class="row mb-5 align-items-center justify-content-center" id="test3">
+      <div class="col-9" id="accordion2">
+        <a href="#des" data-toggle='collapse' data-parent='#accordion2' class="btn btn-shortcutgreen btn-lg">
+          Design Track
+        </a>
 
-      <div class="col-md-3">
-        <div class="card">
-          <div class="card-body">
-            <img src="static/img/Clean tracks and arrows-03.png" alt="idw" class="img-fluid">
-          </div>
+          <div class="collapse show" id="des">
+
+              <!-- SCHEDULE -->
+              <div class="table-repsonsive mt-2">
+                <div class="table100 ver3 m-b-110">
+                  <table data-vertable="ver3">
+                    <thead>
+                      <tr class="row100 head">
+                        <th class="column50 column1" data-column="column1"></th>
+                        <th class="column100 column2" data-column="column2">Lab</th>
+                        <th class="column100 column3" data-column="column3">Upstair</th>
+
+                    </thead>
+                    <tbody>
+                      <tr class="row100">
+                        <td class="column50 column1" data-column="column1">
+                          <p class="lead">Monday</p>
+                          <br>
+                          <a class="btn btn-outline-danger" data-toggle='modal' data-target='#des1'>
+                            <i class="fas fa-user-secret fa-3x"></i>
+                            <i class="fas fa-user-secret fa-3x"></i>
+                          </a>
+                        </td>
+                        <td class="column100 column2" data-column="column2">
+                          <p>16.00-17.45</p>
+                          <p>Basics of User Experience Design</p>
+                          <hr>
+                          <p>18.00-19.45</p>
+                          <p>Find the UX designer in you </p>
+                        </td>
+                        <td class="column100 column3" data-column="column3">
+                          <p>16.00-19.45</p>
+                          <p>From Idea to Product - 101</p>
+                          <p></p>
+                          <p></p>
+                        </td>
+
+                      </tr>
+
+                      <tr class="row100">
+                        <td class="column50 column1" data-column="column1">
+                          <p class="lead">Tuesday</p>
+                          <br>
+                          <a class="btn btn-outline-danger" data-toggle='modal' data-target='#des2'>
+                            <i class="fas fa-user-secret fa-3x"></i>
+                            <i class="fas fa-user-secret fa-3x"></i>
+                          </a>
+                        </td>
+                        <td class="column100 column2" data-column="column2">
+                          <p>16.00-17.45</p>
+                          <p>Branding-From conception to creation</p>
+                          <hr>
+                          <p>18.00-19.45</p>
+                          <p>Story telling for business</p>
+                        </td>
+                        <td class="column100 column3" data-column="column3">
+                          <p>16.00-17.45</p>
+                          <p>Behavioral Design Part-1</p>
+                          <hr>
+                          <p>18.00-19.45</p>
+                          <p>Costumer Validation</p>
+                        </td>
+
+                      </tr>
+
+                      <tr class="row100">
+                        <td class="column50 column1" data-column="column1">
+                          <p class="lead">Wednesday</p>
+                          <br>
+                          <a class="btn btn-outline-danger" data-toggle='modal' data-target='#des3'>
+                            <i class="fas fa-user-secret fa-3x"></i>
+                            <i class="fas fa-user-secret fa-3x"></i>
+                          </a>
+                        </td>
+                        <td class="column100 column2" data-column="column2">
+                          <p>16.00-17.45</p>
+                          <p>User Centric Thinking Design</p>
+                          <hr>
+                          <p>18.00-19.45</p>
+                          <p>Service Design </p>
+                        </td>
+                        <td class="column100 column3" data-column="column3">
+                          <p>16.00-17.45</p>
+                          <p>Design a lovable service or a product in a lean way</p>
+                          <hr>
+                          <p>18.00-19.45</p>
+                          <p>Discover if your product is truly valuable </p>
+                        </td>
+
+                      </tr>
+
+                      <tr class="row100">
+                        <td class="column50 column1" data-column="column1">
+                          <p class="lead">Thursday</p>
+                          <br>
+                          <a class="btn btn-outline-danger" data-toggle='modal' data-target='#des4'>
+                            <i class="fas fa-user-secret fa-3x"></i>
+                            <i class="fas fa-user-secret fa-3x"></i>
+                          </a>
+                        </td>
+                        <td class="column100 column2" data-column="column2">
+                          <p>16.00-17.45</p>
+                          <p>Basics of User Experience Design Part-2</p>
+                          <hr>
+                          <p>18.00-19.45</p>
+                          <p>Designing and applied games</p>
+                        </td>
+                        <td class="column50 column3" data-column="column3">
+                          <p>16.00-17.45</p>
+                          <p>Human Meets Design </p>
+                          <hr>
+                          <p>18.00-19.45</p>
+                          <p>Designing Company Culture</p>
+                        </td>
+
+                      </tr>
+
+                      <tr class="row100">
+                        <td class="column50 column1" data-column="column1">
+                          <p class="lead">Friday</p>
+                          <br>
+                          <a class="btn btn-outline-danger" data-toggle='modal' data-target='#des5'>
+                            <i class="fas fa-user-secret fa-3x"></i>
+                            <i class="fas fa-user-secret fa-3x"></i>
+                          </a>
+                        </td>
+                        <td class="column100 column2" data-column="column2">
+                          <p>16.00-17.45</p>
+                          <p>Behavioral Design Part-2</p>
+                          <hr>
+                          <p>18.00-19.45</p>
+                          <p>Digital Customer Journey, say goodbye to the marketing funnel.</p>
+                        </td>
+                        <td class="column100 column3" data-column="column3">
+                          <p>16.00-17.45</p>
+                          <p>Digital prototyping</p>
+                          <hr>
+                          <p>18.00-19.45</p>
+                          <p>User Interface Prototyping</p>
+                        </td>
+
+                      </tr>
+
+                    </tbody>
+                  </table>
+                </div>
+            </div>
+
         </div>
       </div>
     </div>
     <!-- TECH TRACK -->
-    <div class="row mb-5">
-      <div class="col-md-3">
-        <div class="card">
-          <div class="card-body">
-            <img src="static/img/Clean tracks and arrows-03.png" alt="idw" class="img-fluid">
-          </div>
-        </div>
-      </div>
+    <div class="row mb-5 align-items-center justify-content-center"  id="test4" >
+      <div class="col-9" id="accordion3">
+        <a href="#tec" data-toggle='collapse' data-parent='#accordion3' class="btn btn-shortcutyellow btn-lg">
+          Tech Track
+        </a>
 
-      <div class="col-md-9">
-        <div class="card">
-          <div class="card-header">
-            <h5>Tech Track</h5>
-          </div>
-          <div class="card-body">
-            <p class="card-text">Description and time table of this week here</p>
-          </div>
+        <div class="collapse show" id="tec">
+
+            <!-- SCHEDULE -->
+            <div class="table-repsonsive mt-2">
+              <div class="table100 ver4 m-b-110">
+                  <table data-vertable="ver4">
+                    <thead>
+                      <tr class="row100 head">
+                        <th class="column50 column1" data-column="column1"></th>
+                        <th class="column100 column2" data-column="column2">Lab</th>
+                        <th class="column100 column3" data-column="column3">Upstair</th>
+
+                    </thead>
+                    <tbody>
+                      <tr class="row100">
+                        <td class="column50 column1" data-column="column1">
+                          <p class="lead">Monday</p>
+                          <br>
+                          <a class="btn btn-outline-danger" data-toggle='modal' data-target='#tec1'>
+                            <i class="fas fa-user-secret fa-3x"></i>
+                            <i class="fas fa-user-secret fa-3x"></i>
+                          </a>
+                        </td>
+                        <td class="column100 column2" data-column="column2">
+                          <p>16.00-17.45</p>
+                          <p>360 data analysis</p>
+                          <hr>
+                          <p>18.00-19.45</p>
+                          <p>Tools: Cloud technology</p>
+                        </td>
+                        <td class="column100 column3" data-column="column3">
+                          <p>16.00-17.45</p>
+                          <p>Open data </p>
+                          <hr>
+                          <p>18.00-19.45</p>
+                          <p>Facebook Analytics</p>
+                        </td>
+
+                      </tr>
+
+                      <tr class="row100">
+                        <td class="column50 column1" data-column="column1">
+                          <p class="lead">Tuesday</p>
+                          <br>
+                          <a class="btn btn-outline-danger" data-toggle='modal' data-target='#tec2'>
+                            <i class="fas fa-user-secret fa-3x"></i>
+                            <i class="fas fa-user-secret fa-3x"></i>
+                          </a>
+                        </td>
+                        <td class="column100 column2" data-column="column2">
+                          <p>16.00-19.45</p>
+                          <p>VR</p>
+                          <p></p>
+                        </td>
+                        <td class="column100 column3" data-column="column3">
+                          <p>16.00-17.45</p>
+                          <p>Google Analytics - Crash Course</p>
+                          <hr>
+                          <p>18.00-19.45</p>
+                          <p>SQL for data management Part-1</p>
+                        </td>
+
+                      </tr>
+
+                      <tr class="row100">
+                        <td class="column50 column1" data-column="column1">
+                          <p class="lead">Wednesday</p>
+                          <br>
+                          <a class="btn btn-outline-danger" data-toggle='modal' data-target='#tec3'>
+                            <i class="fas fa-user-secret fa-3x"></i>
+                            <i class="fas fa-user-secret fa-3x"></i>
+                          </a>
+                        </td>
+                        <td class="column100 column2" data-column="column2">
+                          <p>16.00-17.45</p>
+                          <p>Python Data Visalization Part-1</p>
+                          <hr>
+                          <p>18.00-19.45</p>
+                          <p>Facebook Blueprint</p>
+                        </td>
+                        <td class="column100 column3" data-column="column3">
+                          <p>16.00-17.45</p>
+                          <p>SQL for data management Part-2</p>
+                          <hr>
+                          <p>18.00-19.45</p>
+                          <p>How to create a mobile app or web platform by drag and drop</p>
+                        </td>
+
+                      </tr>
+
+                      <tr class="row100">
+                        <td class="column50 column1" data-column="column1">
+                          <p class="lead">Thursday</p>
+                          <br>
+                          <a class="btn btn-outline-danger" data-toggle='modal' data-target='#tec4'>
+                            <i class="fas fa-user-secret fa-3x"></i>
+                            <i class="fas fa-user-secret fa-3x"></i>
+                          </a>
+                        </td>
+                        <td class="column100 column2" data-column="column2">
+                          <p>16.00-17.45</p>
+                          <p>Python Data Visalization Part-2</p>
+                          <hr>
+                          <p>18.00-19.45</p>
+                          <p>Facebook Blueprint</p>
+                        </td>
+                        <td class="column50 column3" data-column="column3">
+                          <p>16.00-17.45</p>
+                          <p>BlockChain/Bitcoin and Security Risk Factors</p>
+                          <hr>
+                          <p>18.00-19.45</p>
+                          <p>SQL for data management Part-3</p>
+                        </td>
+
+                      </tr>
+
+                      <tr class="row100">
+                        <td class="column50 column1" data-column="column1">
+                          <p class="lead">Friday</p>
+                          <br>
+                          <a class="btn btn-outline-danger" data-toggle='modal' data-target='#tec5'>
+                            <i class="fas fa-user-secret fa-3x"></i>
+                            <i class="fas fa-user-secret fa-3x"></i>
+                          </a>
+                        </td>
+                        <td class="column100 column2" data-column="column2">
+                          <p>16.00-17.45</p>
+                          <p>Gamification</p>
+                          <hr>
+                          <p>18.00-19.45</p>
+                          <p>Data Analysis</p>
+                        </td>
+                        <td class="column100 column3" data-column="column3">
+                          <p>16.00-17.45</p>
+                          <p>How to build your software</p>
+                          <hr>
+                          <p>18.00-19.45</p>
+                          <p>AWS</p>
+                        </td>
+
+                      </tr>
+
+                    </tbody>
+                  </table>
+              </div>
+            </div>
         </div>
       </div>
     </div>
+    <!-- DPW -->
+    <div class="row mb-5 align-items-center justify-content-center" id="test5">
+      <div class="col-9" id="accordion4">
+        <a href="#dpw" data-toggle='collapse' data-parent='#accordion4' class="btn btn-light btn-lg">
+          Digital Prototyping Weekend
+        </a>
+
+        <div class="collapse show" id="dpw">
+
+            <!-- SCHEDULE -->
+            <div class="table-repsonsive mt-2">
+              <div class="table100 ver6 m-b-110">
+                  <table data-vertable="ver6">
+                    <thead>
+                      <tr class="row100 head">
+                        <th class="column50 column1" data-column="column1"></th>
+                        <th class="column100 column2" data-column="column2">13 October</th>
+                        <th class="column100 column3" data-column="column3">14 October</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="row100">
+
+                        <td class="column50 column1" data-column="column1">10.00</td>
+                        <!-- DAY1 -->
+                        <td class="column100 column2" data-column="column2">
+                          <p>Welcome and Introduction</p>
+
+                          <p>Criteria for winning the prize</p>
+                          <p></p>
+                        </td>
+                        <!-- DAY2 -->
+                        <td class="column100 column3" data-column="column3">
+                          <p>Warm Up</p>
+
+                        </td>
+
+                      </tr>
+
+                      <tr class="row100">
+                        <td class="column50 column1" data-column="column1">10.30</td>
+                        <!-- DAY1 -->
+                        <td class="column100 column2" data-column="column2">
+                          <p>Icebreaking</p>
+                          <p>Teams formation</p>
+                          <p>(8-10 Teams)</p>
+                        </td>
+                        <!-- DAY2 -->
+                        <td class="column100 column3" data-column="column3">
+
+                          <p>Continue on Prototyping</p>
+                          <p></p>
+                        </td>
+
+                      </tr>
+
+                      <tr class="row100">
+                        <td class="column50 column1" data-column="column1">11.00</td>
+                        <!-- DAY1 -->
+                        <td class="column100 column2" data-column="column2">
+                          <p>Idea and competitiveness analysis</p>
+                          <p>Market Research</p>
+                          <p>User Interview</p>
+                        </td>
+                        <!-- DAY2 -->
+                        <td class="column100 column3" data-column="column3">
+                          <p></p>
+                          <p></p>
+                        </td>
+
+                      </tr>
+
+                      <tr class="row100">
+                        <td class="column50 column1" data-column="column1">11.30</td>
+                        <!-- DAY1 -->
+                        <td class="column100 column2" data-column="column2">
+
+                          <p></p>
+                          <p></p>
+                        </td>
+                        <!-- DAY2 -->
+                        <td class="column50 column3" data-column="column3">
+                          <p>User testing</p>
+                          <p></p>
+                        </td>
+
+                      </tr>
+
+                      <tr class="row100">
+                        <td class="column50 column1" data-column="column1">12.00</td>
+                        <!-- DAY1 -->
+                        <td class="column100 column2" data-column="column2">
+
+                          <p>Lunch Break</p>
+                          <p></p>
+                        </td>
+                        <!-- DAY2 -->
+                        <td class="column100 column3" data-column="column3">
+
+                          <p>Lunch Break</p>
+                          <p></p>
+                        </td>
+
+                      </tr>
+
+                      <tr class="row100">
+                        <td class="column50 column1" data-column="column1">13.30</td>
+                        <!-- DAY1 -->
+                        <td class="column100 column2" data-column="column2">
+
+                          <p></p>
+                          <p></p>
+                        </td>
+                        <!-- DAY2 -->
+                        <td class="column100 column3" data-column="column3">
+
+                          <p></p>
+                          <p></p>
+                        </td>
+
+                      </tr>
+
+                      <tr class="row100">
+                        <td class="column50 column1" data-column="column1">14.00</td>
+                        <!-- DAY1 -->
+                        <td class="column100 column2" data-column="column2">
+
+                          <p></p>
+                          <p></p>
+                        </td>
+                        <!-- DAY2 -->
+                        <td class="column100 column3" data-column="column3">
+
+                          <p>Pitch with Coach</p>
+                          <p></p>
+                        </td>
+
+                      </tr>
+
+                      <tr class="row100">
+                        <td class="column50 column1" data-column="column1">14.30</td>
+                        <!-- DAY1 -->
+                        <td class="column100 column2" data-column="column2">
+                          <p>Wireframe</p>
+                          <p>Prototyping Landing Page</p>
+                          <p>App</p>
+                        </td>
+                        <!-- DAY2 -->
+                        <td class="column100 column3" data-column="column3">
+
+                          <p></p>
+                          <p></p>
+                        </td>
+
+                      </tr>
+
+                      <tr class="row100">
+                        <td class="column50 column1" data-column="column1">15.00</td>
+                        <!-- DAY1 -->
+                        <td class="column100 column2" data-column="column2">
+
+                          <p></p>
+                          <p></p>
+                        </td>
+                        <!-- DAY2 -->
+                        <td class="column100 column3" data-column="column3">
+
+                          <p>Final pitch with Jury</p>
+                          <p></p>
+                        </td>
+
+                      </tr>
+
+                      <tr class="row100">
+                        <td class="column50 column1" data-column="column1">16.30</td>
+                        <!-- DAY1 -->
+                        <td class="column100 column2" data-column="column2">
+
+                          <p></p>
+                          <p></p>
+                        </td>
+                        <!-- DAY2 -->
+                        <td class="column100 column3" data-column="column3">
+
+                          <p>Prize and Celebration</p>
+                          <p>Ending and Networking</p>
+                        </td>
+
+                      </tr>
+
+                      <tr class="row100">
+                        <td class="column50 column1" data-column="column1">17.00</td>
+                        <!-- DAY1 -->
+                        <td class="column100 column2" data-column="column2">
+
+                          <p>End of day 1</p>
+                          <p></p>
+                        </td>
+                        <!-- DAY2 -->
+                        <td class="column100 column3" data-column="column3">
+
+                          <p></p>
+                          <p></p>
+                        </td>
+
+                      </tr>
+
+                    </tbody>
+                  </table>
+              </div>
+            </div>
+
+
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
+
+<!-- MODALS -->
+      <!-- BUSINESS TRACK -->
+      <!-- MONDAY -->
+        <div class="modal fade" id="biz1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                Speaker
+              </div>
+              <div class="modal-body">
+                <ul class="nav nav-tabs">
+                  <li class="nav-item">
+                    <a href="#lab" class="nav-link active" data-toggle='tab'>Lab</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#upstair" class="nav-link" data-toggle='tab'>Upstair</a>
+                  </li>
+                </ul>
+                <div class="tab-content">
+                  <div id="lab" class="container tab-pane active">
+                    <br>
+                    <i>16.00 - 17.45</i>
+                    <h4></h4>
+                    <hr>
+                    <i>18.00 - 19.45</i>
+                    <h4>Tomi Kaukinen</h4>
+                  </div>
+
+                  <div id="upstair" class="container tab-pane fade">
+                    <br>
+                    <i>16.00 - 17.45</i>
+                    <h4>Speaker 1</h4>
+                    <hr>
+                    <i>18.00 - 19.45</i>
+                    <h4>Speaker 2</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- TUESDAY -->
+        <div class="modal fade" id="biz2">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                Speaker
+              </div>
+              <div class="modal-body">
+                <ul class="nav nav-tabs">
+                  <li class="nav-item">
+                    <a href="#labbiz1" class="nav-link active" data-toggle='tab'>Lab</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#upstairbiz1" class="nav-link" data-toggle='tab'>Upstair</a>
+                  </li>
+                </ul>
+                <div class="tab-content">
+                  <div id="labbiz1" class="container tab-pane active">
+                    <br>
+                    <i>16.00 - 17.45</i>
+                    <h4>Speaker 1</h4>
+                    <hr>
+                    <i>18.00 - 19.45</i>
+                    <h4>Speaker 2</h4>
+                  </div>
+
+                  <div id="upstairbiz1" class="container tab-pane fade">
+                    <br>
+                    <i>16.00 - 19.45</i>
+
+                    <h4>Fabritius Sampsa</h4>
+                  </div>
+                </div>
+              </div>
+          </div>
+          </div>
+        </div>
+        <!-- WEDNESDAY -->
+          <div class="modal fade" id="biz3">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  Speaker
+                </div>
+                <div class="modal-body">
+                  <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                      <a href="#labbiz2" class="nav-link active" data-toggle='tab'>Lab</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#upstairbiz2" class="nav-link" data-toggle='tab'>Upstair</a>
+                    </li>
+                  </ul>
+                  <div class="tab-content">
+                    <div id="labbiz2" class="container tab-pane active">
+                      <br>
+                      <i>16.00 - 17.45</i>
+                      <h4>Speaker 1</h4>
+                      <hr>
+                      <i>18.00 - 19.45</i>
+                      <h4>Speaker 2</h4>
+                    </div>
+
+                    <div id="upstairbiz2" class="container tab-pane fade">
+                      <br>
+                      <i>16.00 - 17.45</i>
+                      <h4>Speaker 1</h4>
+                      <hr>
+                      <i>18.00 - 19.45</i>
+                      <h4>Speaker 2</h4>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            </div>
+          </div>
+          <!-- THURSDAY -->
+            <div class="modal fade" id="biz4">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    Speaker
+                  </div>
+                  <div class="modal-body">
+                    <ul class="nav nav-tabs">
+                      <li class="nav-item">
+                        <a href="#labbiz3" class="nav-link active" data-toggle='tab'>Lab</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#upstairbiz3" class="nav-link" data-toggle='tab'>Upstair</a>
+                      </li>
+                    </ul>
+                    <div class="tab-content">
+                      <div id="labbiz3" class="container tab-pane active">
+                        <br>
+                        <i>16.00 - 17.45</i>
+                        <h4>Speaker 1</h4>
+                        <hr>
+                        <i>18.00 - 19.45</i>
+                        <h4>Speaker 2</h4>
+                      </div>
+
+                      <div id="upstairbiz3" class="container tab-pane fade">
+                        <br>
+                        <i>16.00 - 17.45</i>
+                        <h4>Speaker 1</h4>
+                        <hr>
+                        <i>18.00 - 19.45</i>
+                        <h4>Speaker 2</h4>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              </div>
+            </div>
+            <!-- FRIDAY -->
+              <div class="modal fade" id="biz5">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      Speaker
+                    </div>
+                    <div class="modal-body">
+                      <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                          <a href="#labbiz4" class="nav-link active" data-toggle='tab'>Lab</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#upstairbiz4" class="nav-link" data-toggle='tab'>Upstair</a>
+                        </li>
+                      </ul>
+                      <div class="tab-content">
+                        <div id="labbiz4" class="container tab-pane active">
+                          <br>
+                          <i>16.00 - 17.45</i>
+                          <h4>Speaker 1</h4>
+                          <hr>
+                          <i>18.00 - 19.45</i>
+                          <h4>Speaker 2</h4>
+                        </div>
+
+                        <div id="upstairbiz4" class="container tab-pane fade">
+                          <br>
+                          <i>16.00 - 17.45</i>
+                          <h4>Speaker 1</h4>
+                          <hr>
+                          <i>18.00 - 19.45</i>
+                          <h4>Speaker 2</h4>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                </div>
+              </div>
+
+        <!-- DESIGN TRACK -->
+        <!-- MONDAY -->
+          <div class="modal fade" id="des1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  Speaker
+                </div>
+                <div class="modal-body">
+                  <p class="modal-text">16.00-17.45</p>
+                  <h5 class="modal-tittle">Mr.Someone</h5>
+                  <p class="modal-text">From Somewhere</p>
+                  <hr>
+                  <p class="modal-text">18.00-19.45</p>
+                  <h5 class="modal-tittle">Mr.Tomi Kaukinen </h5>
+                  <p class="modal-text">From Somewhere</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- TUESDAY -->
+          <div class="modal fade" id="des2">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  Speaker
+                </div>
+                <div class="modal-body">
+                  <p class="modal-text">16.00-17.45</p>
+                  <h5 class="modal-tittle">Mr.Someone</h5>
+                  <p class="modal-text">From Somewhere</p>
+                  <hr>
+                  <p class="modal-text">18.00-19.45</p>
+                  <h5 class="modal-tittle">Mr.Tomi Kaukinen </h5>
+                  <p class="modal-text">From Somewhere</p>
+                </div>
+            </div>
+            </div>
+          </div>
+          <!-- WEDNESDAY -->
+            <div class="modal fade" id="des3">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    Speaker
+                  </div>
+                  <div class="modal-body">
+                    <p class="modal-text">16.00-17.45</p>
+                    <h5 class="modal-tittle">Mr.Someone</h5>
+                    <p class="modal-text">From Somewhere</p>
+                    <hr>
+                    <p class="modal-text">18.00-19.45</p>
+                    <h5 class="modal-tittle">Mr.Tomi Kaukinen </h5>
+                    <p class="modal-text">From Somewhere</p>
+                  </div>
+              </div>
+              </div>
+            </div>
+            <!-- THURSDAY -->
+              <div class="modal fade" id="des4">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      Speaker
+                    </div>
+                    <div class="modal-body">
+                      <p class="modal-text">16.00-17.45</p>
+                      <h5 class="modal-tittle">Mr.Someone</h5>
+                      <p class="modal-text">From Somewhere</p>
+                      <hr>
+                      <p class="modal-text">18.00-19.45</p>
+                      <h5 class="modal-tittle">Mr.Tomi Kaukinen </h5>
+                      <p class="modal-text">From Somewhere</p>
+                    </div>
+                </div>
+                </div>
+              </div>
+              <!-- FRIDAY -->
+                <div class="modal fade" id="des5">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        Speaker
+                      </div>
+                      <div class="modal-body">
+                        <p class="modal-text">16.00-17.45</p>
+                        <h5 class="modal-tittle">Mr.Someone</h5>
+                        <p class="modal-text">From Somewhere</p>
+                        <hr>
+                        <p class="modal-text">18.00-19.45</p>
+                        <h5 class="modal-tittle">Mr.Tomi Kaukinen </h5>
+                        <p class="modal-text">From Somewhere</p>
+                      </div>
+                  </div>
+                  </div>
+                </div>
+
+          <!-- TECH TRACK -->
+          <!-- MONDAY -->
+            <div class="modal fade" id="tec1">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    Speaker
+                  </div>
+                  <div class="modal-body">
+                    <p class="modal-text">16.00-17.45</p>
+                    <h5 class="modal-tittle">Mr.Someone</h5>
+                    <p class="modal-text">From Somewhere</p>
+                    <hr>
+                    <p class="modal-text">18.00-19.45</p>
+                    <h5 class="modal-tittle">Mr.Tomi Kaukinen </h5>
+                    <p class="modal-text">From Somewhere</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <!-- TUESDAY -->
+            <div class="modal fade" id="tec2">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    Speaker
+                  </div>
+                  <div class="modal-body">
+                    <p class="modal-text">16.00-17.45</p>
+                    <h5 class="modal-tittle">Mr.Someone</h5>
+                    <p class="modal-text">From Somewhere</p>
+                    <hr>
+                    <p class="modal-text">18.00-19.45</p>
+                    <h5 class="modal-tittle">Mr.Tomi Kaukinen </h5>
+                    <p class="modal-text">From Somewhere</p>
+                  </div>
+              </div>
+              </div>
+            </div>
+            <!-- WEDNESDAY -->
+              <div class="modal fade" id="tec3">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      Speaker
+                    </div>
+                    <div class="modal-body">
+                      <p class="modal-text">16.00-17.45</p>
+                      <h5 class="modal-tittle">Mr.Someone</h5>
+                      <p class="modal-text">From Somewhere</p>
+                      <hr>
+                      <p class="modal-text">18.00-19.45</p>
+                      <h5 class="modal-tittle">Mr.Tomi Kaukinen </h5>
+                      <p class="modal-text">From Somewhere</p>
+                    </div>
+                </div>
+                </div>
+              </div>
+              <!-- THURSDAY -->
+                <div class="modal fade" id="tec4">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        Speaker
+                      </div>
+                      <div class="modal-body">
+                        <p class="modal-text">16.00-17.45</p>
+                        <h5 class="modal-tittle">Mr.Someone</h5>
+                        <p class="modal-text">From Somewhere</p>
+                        <hr>
+                        <p class="modal-text">18.00-19.45</p>
+                        <h5 class="modal-tittle">Mr.Tomi Kaukinen </h5>
+                        <p class="modal-text">From Somewhere</p>
+                      </div>
+                  </div>
+                  </div>
+                </div>
+                <!-- FRIDAY -->
+                  <div class="modal fade" id="tec5">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          Speaker
+                        </div>
+                        <div class="modal-body">
+                          <p class="modal-text">16.00-17.45</p>
+                          <h5 class="modal-tittle">Mr.Someone</h5>
+                          <p class="modal-text">From Somewhere</p>
+                          <hr>
+                          <p class="modal-text">18.00-19.45</p>
+                          <h5 class="modal-tittle">Mr.Tomi Kaukinen </h5>
+                          <p class="modal-text">From Somewhere</p>
+                        </div>
+                    </div>
+                    </div>
+                  </div>
+
 {%endblock content%}

@@ -48,6 +48,9 @@ $yellow:  #ffc107 !default;
 $green:   #28a745 !default;
 $teal:    #20c997 !default;
 $cyan:    #17a2b8 !default;
+$shortcutgreen: #00A99D;
+$shorcutred: #E8592E;
+$shortcutyellow: #FDC81E;
 
 $colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
@@ -90,7 +93,10 @@ $theme-colors: map-merge(
     "warning":    $warning,
     "danger":     $danger,
     "light":      $light,
-    "dark":       $dark
+    "dark":       $dark,
+    "shortcutgreen": $shortcutgreen,
+    "shortcutred": $shorcutred,
+    "shortcutyellow": $shortcutyellow
   ),
   $theme-colors
 );

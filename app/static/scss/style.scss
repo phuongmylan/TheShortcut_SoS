@@ -13,6 +13,12 @@ body{
     padding-right: 1.5rem;
   }
 }
+#stickybar{
+  width: 100%;
+  background: shortcutred;
+  background: linear-gradient(to right, #E8592E, #FDC81E);
+  border-radius: 10px;
+}
 
 #heading{
   position: relative;
@@ -40,4 +46,42 @@ body{
   left: 0;
   height: 100%;
   width: 100%;
+}
+
+#test1{
+  position: relative;
+  min-height: 200px;
+  background: url("../img/clean banner School of Startups may18-02.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 0 ;
+  text-align: center;
+
+}
+%sosbg{
+  position: relative;
+  min-height: 200px;
+  background: url("../img/clean banner School of Startups may18-02.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 0 -100px;
+  text-align: center;
+}
+
+#test2{
+  @extend %sosbg;
+}
+
+#test3{
+  @extend %sosbg;
+}
+
+#test4{
+  @extend %sosbg;
+}
+
+#test5{
+  @extend %sosbg;
 }
