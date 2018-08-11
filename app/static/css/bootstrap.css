@@ -5526,7 +5526,7 @@ button.bg-shortcutyellow:focus {
 @supports (position: sticky) {
   .sticky-top {
     position: sticky;
-    top: 100px;
+    top: 0;
     z-index: 1020; } }
 
 .sr-only {

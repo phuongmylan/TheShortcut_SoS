@@ -6,7 +6,7 @@
 {%block content%}
 <section id="schedule" class="">
   <div class="container sticky-top mb-1" id="stickybar">
-    <div class="progress" style="height:50px;">
+    <div class="progress" style="height:50px;" id="progbar">
       <div class="progress-bar bg-light" style="width:20%">
         <a href="#test1" class="lead text-muted">IDW</a>
       </div>
@@ -28,9 +28,14 @@
     <!-- IDW -->
     <div class="row py-5 mb-5 align-items-center justify-content-center" id="test1">
       <div class="col-9"  id="accordion1">
-        <a href="#idw" data-toggle='collapse' data-parent='#accordion1' class="btn btn-light btn-lg">
-          Idea Development Weekend
-        </a>
+        <div id="clickbtn">
+          <a href="#idw" data-toggle='collapse' data-parent='#accordion1' class="btn btn-light btn-lg">
+            <p>Idea Development Weekend</p>
+            <p>22nd & 23rd September</p>
+              <i class="fas fa-angle-double-up"></i>
+            </a>
+        </div>
+
 
           <div class="collapse show" id="idw">
 
@@ -207,11 +212,16 @@
 
     </div>
     <!-- BIZTRACK -->
-    <div class="row mb-5 align-items-center justify-content-center" id="test2">
+    <div class="row py-5 mb-5 align-items-center justify-content-center" id="test2">
       <div class="col-9" id="accordion">
-        <a href="#biz" data-parent='#accordion' data-toggle='collapse' class="btn btn-shortcutred btn-lg">
-           Business Track
-        </a>
+        <div id="clickbtnbiz">
+          <a href="#biz" data-parent='#accordion' data-toggle='collapse' class="btn btn-shortcutred btn-lg">
+             <p>Business Track</p>
+             <p>24th - 28th September</p>
+             <i class="fas fa-angle-double-up"></i>
+          </a>
+        </div>
+
           <div class="collapse show" id="biz">
 
               <div class="table-repsonsive mt-2">
@@ -361,11 +371,16 @@
       </div>
     </div>
     <!-- DESIGN TRACK -->
-    <div class="row mb-5 align-items-center justify-content-center" id="test3">
+    <div class="row py-5 mb-5 align-items-center justify-content-center" id="test3">
       <div class="col-9" id="accordion2">
-        <a href="#des" data-toggle='collapse' data-parent='#accordion2' class="btn btn-shortcutgreen btn-lg">
-          Design Track
-        </a>
+        <div id="clickbtndes">
+          <a href="#des" data-toggle='collapse' data-parent='#accordion2' class="btn btn-shortcutgreen btn-lg">
+            <p>Design Track</p>
+            <p>1st - 5th October</p>
+            <i class="fas fa-angle-double-up"></i>
+          </a>
+        </div>
+
 
           <div class="collapse show" id="des">
 
@@ -519,11 +534,16 @@
       </div>
     </div>
     <!-- TECH TRACK -->
-    <div class="row mb-5 align-items-center justify-content-center"  id="test4" >
+    <div class="row py-5 mb-5 align-items-center justify-content-center"  id="test4" >
       <div class="col-9" id="accordion3">
-        <a href="#tec" data-toggle='collapse' data-parent='#accordion3' class="btn btn-shortcutyellow btn-lg">
-          Tech Track
-        </a>
+        <div id="clickbtntec">
+          <a href="#tec" data-toggle='collapse' data-parent='#accordion3' class="btn btn-shortcutyellow btn-lg">
+            <p>Tech Track</p>
+            <p>8th - 12th October</p>
+            <i class="fas fa-angle-double-up"></i>
+          </a>
+        </div>
+
 
         <div class="collapse show" id="tec">
 
@@ -675,18 +695,22 @@
       </div>
     </div>
     <!-- DPW -->
-    <div class="row mb-5 align-items-center justify-content-center" id="test5">
+    <div class="row py-5 mb-5 align-items-center justify-content-center" id="test5">
       <div class="col-9" id="accordion4">
-        <a href="#dpw" data-toggle='collapse' data-parent='#accordion4' class="btn btn-light btn-lg">
-          Digital Prototyping Weekend
-        </a>
+        <div id="clickbtndpw">
+          <a href="#dpw" data-toggle='collapse' data-parent='#accordion4' class="btn btn-light btn-lg">
+            <p>Digital Prototyping Weekend</p>
+            <p>13th - 14th October</p>
+            <i class="fas fa-angle-double-up"></i>
+          </a>
+        </div>
+
 
         <div class="collapse show" id="dpw">
-
             <!-- SCHEDULE -->
             <div class="table-repsonsive mt-2">
-              <div class="table100 ver6 m-b-110">
-                  <table data-vertable="ver6">
+              <div class="table100 ver5 m-b-110">
+                  <table data-vertable="ver5">
                     <thead>
                       <tr class="row100 head">
                         <th class="column50 column1" data-column="column1"></th>
@@ -885,8 +909,6 @@
                   </table>
               </div>
             </div>
-
-
         </div>
       </div>
     </div>
@@ -914,21 +936,36 @@
                 </ul>
                 <div class="tab-content">
                   <div id="lab" class="container tab-pane active">
-                    <br>
-                    <i>16.00 - 17.45</i>
-                    <h4></h4>
+                    <div class="row">
+                      <div class="col-6">
+                        <i>16.00 - 17.45</i>
+                        <h4>To be confirmed</h4>
+                        <img src="static/img/fun.png" alt="" class="img-fluid">
+                      </div>
+                      <div class="col-6">
+                        <i>18.00 - 19.45</i>
+                        <h4>Tomi Kaukinen</h4>
+                        <img src="static/img/fun.png" alt="" class="img-fluid">
+                      </div>
+                    </div>
+
                     <hr>
-                    <i>18.00 - 19.45</i>
-                    <h4>Tomi Kaukinen</h4>
+
                   </div>
 
                   <div id="upstair" class="container tab-pane fade">
-                    <br>
-                    <i>16.00 - 17.45</i>
-                    <h4>Speaker 1</h4>
-                    <hr>
-                    <i>18.00 - 19.45</i>
-                    <h4>Speaker 2</h4>
+                    <div class="row">
+                      <div class="col-6">
+                        <i>16.00 - 17.45</i>
+                        <h4>To be confirmed</h4>
+                        <img src="static/img/fun.png" alt="" class="img-fluid">
+                      </div>
+                      <div class="col-6">
+                        <i>18.00 - 19.45</i>
+                        <h4>To be confirmed</h4>
+                        <img src="static/img/fun.png" alt="" class="img-fluid">
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -953,19 +990,29 @@
                 </ul>
                 <div class="tab-content">
                   <div id="labbiz1" class="container tab-pane active">
-                    <br>
-                    <i>16.00 - 17.45</i>
-                    <h4>Speaker 1</h4>
-                    <hr>
-                    <i>18.00 - 19.45</i>
-                    <h4>Speaker 2</h4>
+                    <div class="row">
+                      <div class="col-6">
+                        <i>16.00 - 17.45</i>
+                        <h4>To be confirmed</h4>
+                        <img src="static/img/fun.png" alt="" class="img-fluid">
+                      </div>
+                      <div class="col-6">
+                        <i>18.00 - 19.45</i>
+                        <h4>To be confirmed</h4>
+                        <img src="static/img/fun.png" alt="" class="img-fluid">
+                      </div>
+                    </div>
                   </div>
 
                   <div id="upstairbiz1" class="container tab-pane fade">
-                    <br>
-                    <i>16.00 - 19.45</i>
+                    <div class="row">
+                      <div class="col-6">
+                        <i>16.00 - 19.45</i>
+                        <h4>Fabritius Sampsa</h4>
+                        <img src="static/img/fun.png" alt="" class="img-fluid">
+                      </div>
 
-                    <h4>Fabritius Sampsa</h4>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -990,21 +1037,29 @@
                   </ul>
                   <div class="tab-content">
                     <div id="labbiz2" class="container tab-pane active">
-                      <br>
-                      <i>16.00 - 17.45</i>
-                      <h4>Speaker 1</h4>
-                      <hr>
-                      <i>18.00 - 19.45</i>
-                      <h4>Speaker 2</h4>
+                      <div class="row">
+                        <div class="col-6">
+                          <i>16.00 - 19.45</i>
+                          <h4>Pouria Kay</h4>
+                          <img src="static/img/fun.png" alt="" class="img-fluid">
+                        </div>
+
+                      </div>
                     </div>
 
                     <div id="upstairbiz2" class="container tab-pane fade">
-                      <br>
-                      <i>16.00 - 17.45</i>
-                      <h4>Speaker 1</h4>
-                      <hr>
-                      <i>18.00 - 19.45</i>
-                      <h4>Speaker 2</h4>
+                      <div class="row">
+                        <div class="col-6">
+                          <i>16.00 - 17.45</i>
+                          <h4>Anders Gustavsson</h4>
+                          <img src="static/img/fun.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-6">
+                          <i>18.00 - 19.45</i>
+                          <h4>Tomi Kaukinen</h4>
+                          <img src="static/img/fun.png" alt="" class="img-fluid">
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -1029,21 +1084,29 @@
                     </ul>
                     <div class="tab-content">
                       <div id="labbiz3" class="container tab-pane active">
-                        <br>
-                        <i>16.00 - 17.45</i>
-                        <h4>Speaker 1</h4>
-                        <hr>
-                        <i>18.00 - 19.45</i>
-                        <h4>Speaker 2</h4>
+                        <div class="row">
+                          <div class="col-6">
+                            <i>16.00 - 19.45</i>
+                            <h4>To be confirmed</h4>
+                            <img src="static/img/fun.png" alt="" class="img-fluid">
+                          </div>
+
+                        </div>
                       </div>
 
                       <div id="upstairbiz3" class="container tab-pane fade">
-                        <br>
-                        <i>16.00 - 17.45</i>
-                        <h4>Speaker 1</h4>
-                        <hr>
-                        <i>18.00 - 19.45</i>
-                        <h4>Speaker 2</h4>
+                        <div class="row">
+                          <div class="col-6">
+                            <i>16.00 - 17.45</i>
+                            <h4>To be confirmed</h4>
+                            <img src="static/img/fun.png" alt="" class="img-fluid">
+                          </div>
+                          <div class="col-6">
+                            <i>18.00 - 19.45</i>
+                            <h4>To be confirmed</h4>
+                            <img src="static/img/fun.png" alt="" class="img-fluid">
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -1068,21 +1131,33 @@
                       </ul>
                       <div class="tab-content">
                         <div id="labbiz4" class="container tab-pane active">
-                          <br>
-                          <i>16.00 - 17.45</i>
-                          <h4>Speaker 1</h4>
-                          <hr>
-                          <i>18.00 - 19.45</i>
-                          <h4>Speaker 2</h4>
+                          <div class="row">
+                            <div class="col-6">
+                              <i>16.00 - 17.45</i>
+                              <h4>To be confirmed</h4>
+                              <img src="static/img/fun.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="col-6">
+                              <i>18.00 - 19.45</i>
+                              <h4>To be confirmed</h4>
+                              <img src="static/img/fun.png" alt="" class="img-fluid">
+                            </div>
+                          </div>
                         </div>
 
                         <div id="upstairbiz4" class="container tab-pane fade">
-                          <br>
-                          <i>16.00 - 17.45</i>
-                          <h4>Speaker 1</h4>
-                          <hr>
-                          <i>18.00 - 19.45</i>
-                          <h4>Speaker 2</h4>
+                          <div class="row">
+                            <div class="col-6">
+                              <i>16.00 - 17.45</i>
+                              <h4>To be confirmed</h4>
+                              <img src="static/img/fun.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="col-6">
+                              <i>18.00 - 19.45</i>
+                              <h4>Tomi Kaukinen</h4>
+                              <img src="static/img/fun.png" alt="" class="img-fluid">
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -1092,6 +1167,7 @@
 
         <!-- DESIGN TRACK -->
         <!-- MONDAY -->
+        <!-- MONDAY -->
           <div class="modal fade" id="des1">
             <div class="modal-dialog">
               <div class="modal-content">
@@ -1099,13 +1175,44 @@
                   Speaker
                 </div>
                 <div class="modal-body">
-                  <p class="modal-text">16.00-17.45</p>
-                  <h5 class="modal-tittle">Mr.Someone</h5>
-                  <p class="modal-text">From Somewhere</p>
-                  <hr>
-                  <p class="modal-text">18.00-19.45</p>
-                  <h5 class="modal-tittle">Mr.Tomi Kaukinen </h5>
-                  <p class="modal-text">From Somewhere</p>
+                  <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                      <a href="#labdes1" class="nav-link active" data-toggle='tab'>Lab</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#upstairdes1" class="nav-link" data-toggle='tab'>Upstair</a>
+                    </li>
+                  </ul>
+                  <div class="tab-content">
+                    <div id="labdes1" class="container tab-pane active">
+                      <div class="row">
+                        <div class="col-6">
+                          <i>16.00 - 17.45</i>
+                          <h4>Angelos Arnis</h4>
+                          <img src="static/img/fun.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-6">
+                          <i>18.00 - 19.45</i>
+                          <h4>To be confirmed</h4>
+                          <img src="static/img/fun.png" alt="" class="img-fluid">
+                        </div>
+                      </div>
+
+                      <hr>
+
+                    </div>
+
+                    <div id="upstairdes1" class="container tab-pane fade">
+                      <div class="row">
+                        <div class="col-6">
+                          <i>16.00 - 19.45</i>
+                          <h4>Aku-jakko Sakonen</h4>
+                          <img src="static/img/fun.png" alt="" class="img-fluid">
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1118,13 +1225,45 @@
                   Speaker
                 </div>
                 <div class="modal-body">
-                  <p class="modal-text">16.00-17.45</p>
-                  <h5 class="modal-tittle">Mr.Someone</h5>
-                  <p class="modal-text">From Somewhere</p>
-                  <hr>
-                  <p class="modal-text">18.00-19.45</p>
-                  <h5 class="modal-tittle">Mr.Tomi Kaukinen </h5>
-                  <p class="modal-text">From Somewhere</p>
+                  <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                      <a href="#labdes2" class="nav-link active" data-toggle='tab'>Lab</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#upstairdes2" class="nav-link" data-toggle='tab'>Upstair</a>
+                    </li>
+                  </ul>
+                  <div class="tab-content">
+                    <div id="labdes2" class="container tab-pane active">
+                      <div class="row">
+                        <div class="col-6">
+                          <i>16.00 - 17.45</i>
+                          <h4>To be confirmed</h4>
+                          <img src="static/img/fun.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-6">
+                          <i>18.00 - 19.45</i>
+                          <h4>Lotta Heikkeri</h4>
+                          <img src="static/img/fun.png" alt="" class="img-fluid">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div id="upstairdes2" class="container tab-pane fade">
+                      <div class="row">
+                        <div class="col-6">
+                          <i>16.00 - 17.45</i>
+                          <h4>Ashwin Rajan</h4>
+                          <img src="static/img/fun.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-6">
+                          <i>18.00 - 19.45</i>
+                          <h4>To be confirmed</h4>
+                          <img src="static/img/fun.png" alt="" class="img-fluid">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
             </div>
             </div>
@@ -1137,13 +1276,45 @@
                     Speaker
                   </div>
                   <div class="modal-body">
-                    <p class="modal-text">16.00-17.45</p>
-                    <h5 class="modal-tittle">Mr.Someone</h5>
-                    <p class="modal-text">From Somewhere</p>
-                    <hr>
-                    <p class="modal-text">18.00-19.45</p>
-                    <h5 class="modal-tittle">Mr.Tomi Kaukinen </h5>
-                    <p class="modal-text">From Somewhere</p>
+                    <ul class="nav nav-tabs">
+                      <li class="nav-item">
+                        <a href="#labdes3" class="nav-link active" data-toggle='tab'>Lab</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#upstairdes3" class="nav-link" data-toggle='tab'>Upstair</a>
+                      </li>
+                    </ul>
+                    <div class="tab-content">
+                      <div id="labdes3" class="container tab-pane active">
+                        <div class="row">
+                          <div class="col-6">
+                            <i>16.00 - 17.45</i>
+                            <h4>To be confirmed</h4>
+                            <img src="static/img/fun.png" alt="" class="img-fluid">
+                          </div>
+                          <div class="col-6">
+                            <i>18.00 - 19.45</i>
+                            <h4>To be confirmed</h4>
+                            <img src="static/img/fun.png" alt="" class="img-fluid">
+                          </div>
+                        </div>
+                      </div>
+
+                      <div id="upstairdes3" class="container tab-pane fade">
+                        <div class="row">
+                          <div class="col-6">
+                            <i>16.00 - 17.45</i>
+                            <h4>Rami Alisawi</h4>
+                            <img src="static/img/fun.png" alt="" class="img-fluid">
+                          </div>
+                          <div class="col-6">
+                            <i>18.00 - 19.45</i>
+                            <h4>To be confirmed</h4>
+                            <img src="static/img/fun.png" alt="" class="img-fluid">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
               </div>
               </div>
@@ -1156,13 +1327,45 @@
                       Speaker
                     </div>
                     <div class="modal-body">
-                      <p class="modal-text">16.00-17.45</p>
-                      <h5 class="modal-tittle">Mr.Someone</h5>
-                      <p class="modal-text">From Somewhere</p>
-                      <hr>
-                      <p class="modal-text">18.00-19.45</p>
-                      <h5 class="modal-tittle">Mr.Tomi Kaukinen </h5>
-                      <p class="modal-text">From Somewhere</p>
+                      <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                          <a href="#labdes4" class="nav-link active" data-toggle='tab'>Lab</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#upstairdes4" class="nav-link" data-toggle='tab'>Upstair</a>
+                        </li>
+                      </ul>
+                      <div class="tab-content">
+                        <div id="labdes4" class="container tab-pane active">
+                          <div class="row">
+                            <div class="col-6">
+                              <i>16.00 - 17.45</i>
+                              <h4>Angelos Arnis</h4>
+                              <img src="static/img/fun.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="col-6">
+                              <i>18.00 - 19.45</i>
+                              <h4>Elina Arponen</h4>
+                              <img src="static/img/fun.png" alt="" class="img-fluid">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div id="upstairdes4" class="container tab-pane fade">
+                          <div class="row">
+                            <div class="col-6">
+                              <i>16.00 - 17.45</i>
+                              <h4>Ashwin Rajan</h4>
+                              <img src="static/img/fun.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="col-6">
+                              <i>18.00 - 19.45</i>
+                              <h4>To be confirmed</h4>
+                              <img src="static/img/fun.png" alt="" class="img-fluid">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                 </div>
                 </div>
@@ -1175,13 +1378,45 @@
                         Speaker
                       </div>
                       <div class="modal-body">
-                        <p class="modal-text">16.00-17.45</p>
-                        <h5 class="modal-tittle">Mr.Someone</h5>
-                        <p class="modal-text">From Somewhere</p>
-                        <hr>
-                        <p class="modal-text">18.00-19.45</p>
-                        <h5 class="modal-tittle">Mr.Tomi Kaukinen </h5>
-                        <p class="modal-text">From Somewhere</p>
+                        <ul class="nav nav-tabs">
+                          <li class="nav-item">
+                            <a href="#labdes5" class="nav-link active" data-toggle='tab'>Lab</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="#upstairdes5" class="nav-link" data-toggle='tab'>Upstair</a>
+                          </li>
+                        </ul>
+                        <div class="tab-content">
+                          <div id="labdes5" class="container tab-pane active">
+                            <div class="row">
+                              <div class="col-6">
+                                <i>16.00 - 17.45</i>
+                                <h4>Ashwin Rajan</h4>
+                                <img src="static/img/fun.png" alt="" class="img-fluid">
+                              </div>
+                              <div class="col-6">
+                                <i>18.00 - 19.45</i>
+                                <h4>To be confirmed</h4>
+                                <img src="static/img/fun.png" alt="" class="img-fluid">
+                              </div>
+                            </div>
+                          </div>
+
+                          <div id="upstairdes5" class="container tab-pane fade">
+                            <div class="row">
+                              <div class="col-6">
+                                <i>16.00 - 17.45</i>
+                                <h4>To be confirmed</h4>
+                                <img src="static/img/fun.png" alt="" class="img-fluid">
+                              </div>
+                              <div class="col-6">
+                                <i>18.00 - 19.45</i>
+                                <h4>To be confirmed</h4>
+                                <img src="static/img/fun.png" alt="" class="img-fluid">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                   </div>
                   </div>
@@ -1196,13 +1431,48 @@
                     Speaker
                   </div>
                   <div class="modal-body">
-                    <p class="modal-text">16.00-17.45</p>
-                    <h5 class="modal-tittle">Mr.Someone</h5>
-                    <p class="modal-text">From Somewhere</p>
-                    <hr>
-                    <p class="modal-text">18.00-19.45</p>
-                    <h5 class="modal-tittle">Mr.Tomi Kaukinen </h5>
-                    <p class="modal-text">From Somewhere</p>
+                    <ul class="nav nav-tabs">
+                      <li class="nav-item">
+                        <a href="#labtec1" class="nav-link active" data-toggle='tab'>Lab</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#upstairtec1" class="nav-link" data-toggle='tab'>Upstair</a>
+                      </li>
+                    </ul>
+                    <div class="tab-content">
+                      <div id="labtec1" class="container tab-pane active">
+                        <div class="row">
+                          <div class="col-6">
+                            <i>16.00 - 17.45</i>
+                            <h4>To be confirmed</h4>
+                            <img src="static/img/fun.png" alt="" class="img-fluid">
+                          </div>
+                          <div class="col-6">
+                            <i>18.00 - 19.45</i>
+                            <h4>To be confirmed</h4>
+                            <img src="static/img/fun.png" alt="" class="img-fluid">
+                          </div>
+                        </div>
+
+                        <hr>
+
+                      </div>
+
+                      <div id="upstairtec1" class="container tab-pane fade">
+                        <div class="row">
+                          <div class="col-6">
+                            <i>16.00 - 17.45</i>
+                            <h4>To be confirmed</h4>
+                            <img src="static/img/fun.png" alt="" class="img-fluid">
+                          </div>
+                          <div class="col-6">
+                            <i>18.00 - 19.45</i>
+                            <h4>To be confirmed</h4>
+                            <img src="static/img/fun.png" alt="" class="img-fluid">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1215,13 +1485,41 @@
                     Speaker
                   </div>
                   <div class="modal-body">
-                    <p class="modal-text">16.00-17.45</p>
-                    <h5 class="modal-tittle">Mr.Someone</h5>
-                    <p class="modal-text">From Somewhere</p>
-                    <hr>
-                    <p class="modal-text">18.00-19.45</p>
-                    <h5 class="modal-tittle">Mr.Tomi Kaukinen </h5>
-                    <p class="modal-text">From Somewhere</p>
+                    <ul class="nav nav-tabs">
+                      <li class="nav-item">
+                        <a href="#labtec2" class="nav-link active" data-toggle='tab'>Lab</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#upstairtec2" class="nav-link" data-toggle='tab'>Upstair</a>
+                      </li>
+                    </ul>
+                    <div class="tab-content">
+                      <div id="labtec2" class="container tab-pane active">
+                        <div class="row">
+                          <div class="col-6">
+                            <i>16.00 - 19.45</i>
+                            <h4>To be confirmed</h4>
+                            <img src="static/img/fun.png" alt="" class="img-fluid">
+                          </div>
+
+                        </div>
+                      </div>
+
+                      <div id="upstairtec2" class="container tab-pane fade">
+                        <div class="row">
+                          <div class="col-6">
+                            <i>16.00 - 17.45</i>
+                            <h4>Mira Quru</h4>
+                            <img src="static/img/fun.png" alt="" class="img-fluid">
+                          </div>
+                          <div class="col-6">
+                            <i>18.00 - 19.45</i>
+                            <h4>Nico</h4>
+                            <img src="static/img/fun.png" alt="" class="img-fluid">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
               </div>
               </div>
@@ -1234,13 +1532,45 @@
                       Speaker
                     </div>
                     <div class="modal-body">
-                      <p class="modal-text">16.00-17.45</p>
-                      <h5 class="modal-tittle">Mr.Someone</h5>
-                      <p class="modal-text">From Somewhere</p>
-                      <hr>
-                      <p class="modal-text">18.00-19.45</p>
-                      <h5 class="modal-tittle">Mr.Tomi Kaukinen </h5>
-                      <p class="modal-text">From Somewhere</p>
+                      <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                          <a href="#labtec3" class="nav-link active" data-toggle='tab'>Lab</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#upstairtec3" class="nav-link" data-toggle='tab'>Upstair</a>
+                        </li>
+                      </ul>
+                      <div class="tab-content">
+                        <div id="labtec3" class="container tab-pane active">
+                          <div class="row">
+                            <div class="col-6">
+                              <i>16.00 - 17.45</i>
+                              <h4>Mohamed </h4>
+                              <img src="static/img/fun.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="col-6">
+                              <i>18.00 - 19.45</i>
+                              <h4>To be confirmed</h4>
+                              <img src="static/img/fun.png" alt="" class="img-fluid">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div id="upstairtec3" class="container tab-pane fade">
+                          <div class="row">
+                            <div class="col-6">
+                              <i>16.00 - 17.45</i>
+                              <h4>Nico</h4>
+                              <img src="static/img/fun.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="col-6">
+                              <i>18.00 - 19.45</i>
+                              <h4>To be confirmed</h4>
+                              <img src="static/img/fun.png" alt="" class="img-fluid">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                 </div>
                 </div>
@@ -1253,13 +1583,45 @@
                         Speaker
                       </div>
                       <div class="modal-body">
-                        <p class="modal-text">16.00-17.45</p>
-                        <h5 class="modal-tittle">Mr.Someone</h5>
-                        <p class="modal-text">From Somewhere</p>
-                        <hr>
-                        <p class="modal-text">18.00-19.45</p>
-                        <h5 class="modal-tittle">Mr.Tomi Kaukinen </h5>
-                        <p class="modal-text">From Somewhere</p>
+                        <ul class="nav nav-tabs">
+                          <li class="nav-item">
+                            <a href="#labtec4" class="nav-link active" data-toggle='tab'>Lab</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="#upstairtec4" class="nav-link" data-toggle='tab'>Upstair</a>
+                          </li>
+                        </ul>
+                        <div class="tab-content">
+                          <div id="labtec4" class="container tab-pane active">
+                            <div class="row">
+                              <div class="col-6">
+                                <i>16.00 - 17.45</i>
+                                <h4>Mohamed</h4>
+                                <img src="static/img/fun.png" alt="" class="img-fluid">
+                              </div>
+                              <div class="col-6">
+                                <i>18.00 - 19.45</i>
+                                <h4>To be confirmed</h4>
+                                <img src="static/img/fun.png" alt="" class="img-fluid">
+                              </div>
+                            </div>
+                          </div>
+
+                          <div id="upstairtec4" class="container tab-pane fade">
+                            <div class="row">
+                              <div class="col-6">
+                                <i>16.00 - 17.45</i>
+                                <h4>Timo Oinonnen</h4>
+                                <img src="static/img/fun.png" alt="" class="img-fluid">
+                              </div>
+                              <div class="col-6">
+                                <i>18.00 - 19.45</i>
+                                <h4>Nico</h4>
+                                <img src="static/img/fun.png" alt="" class="img-fluid">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                   </div>
                   </div>
@@ -1272,16 +1634,80 @@
                           Speaker
                         </div>
                         <div class="modal-body">
-                          <p class="modal-text">16.00-17.45</p>
-                          <h5 class="modal-tittle">Mr.Someone</h5>
-                          <p class="modal-text">From Somewhere</p>
-                          <hr>
-                          <p class="modal-text">18.00-19.45</p>
-                          <h5 class="modal-tittle">Mr.Tomi Kaukinen </h5>
-                          <p class="modal-text">From Somewhere</p>
+                          <ul class="nav nav-tabs">
+                            <li class="nav-item">
+                              <a href="#labtec5" class="nav-link active" data-toggle='tab'>Lab</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="#upstairtec5" class="nav-link" data-toggle='tab'>Upstair</a>
+                            </li>
+                          </ul>
+                          <div class="tab-content">
+                            <div id="labtec5" class="container tab-pane active">
+                              <div class="row">
+                                <div class="col-6">
+                                  <i>16.00 - 17.45</i>
+                                  <h4>Juha Ruistola </h4>
+                                  <img src="static/img/fun.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="col-6">
+                                  <i>18.00 - 19.45</i>
+                                  <h4>To be confirmed</h4>
+                                  <img src="static/img/fun.png" alt="" class="img-fluid">
+                                </div>
+                              </div>
+                            </div>
+
+                            <div id="upstairtec5" class="container tab-pane fade">
+                              <div class="row">
+                                <div class="col-6">
+                                  <i>16.00 - 17.45</i>
+                                  <h4>To be confirmed</h4>
+                                  <img src="static/img/fun.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="col-6">
+                                  <i>18.00 - 19.45</i>
+                                  <h4>To be confirmed</h4>
+                                  <img src="static/img/fun.png" alt="" class="img-fluid">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                     </div>
                     </div>
                   </div>
 
 {%endblock content%}
+{%block script%}
+<script>
+  $('#progbar a').on('click', function(event){
+    if (this.hash != '') {
+      event.preventDefault();
+      const hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+        window.location.hash = hash
+      })
+    }
+  });
+
+  $('#clickbtn').click(function() {
+    $("i", this).toggleClass("fas fa-angle-double-down fas fa-angle-double-up");
+  })
+  $('#clickbtnbiz').click(function() {
+    $("i", this).toggleClass("fas fa-angle-double-down fas fa-angle-double-up");
+  })
+  $('#clickbtndes').click(function() {
+    $("i", this).toggleClass("fas fa-angle-double-down fas fa-angle-double-up");
+  })
+  $('#clickbtntec').click(function() {
+    $("i", this).toggleClass("fas fa-angle-double-down fas fa-angle-double-up");
+  })
+  $('#clickbtndpw').click(function() {
+    $("i", this).toggleClass("fas fa-angle-double-down fas fa-angle-double-up");
+  })
+
+</script>
+{%endblock script%}
