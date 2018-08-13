@@ -1,13 +1,13 @@
 $prime: #f4d942;
 $prime-overlay: rgba(86, 81, 51,0.5);
 body{
-  background: linear-gradient(-134deg, #1AA399 0%, #5EC7E1 100%);
+  background: linear-gradient(to bottom, white,#5EC7E1 );
 }
 
 .navbar{
   box-shadow: 2px 12px 12px $prime;
   opacity: 0.9;
-  background: linear-gradient(-134deg, #1AA399 0%, #5EC7E1 100%);
+  background: linear-gradient(to left, #1AA399, #5EC7E1);
   .nav-item{
     font-size: 1.5rem;
     padding-right: 1.5rem;
@@ -27,9 +27,7 @@ body{
   border-radius: 10px;
   box-shadow: 1px 1px 5px black;
 }
-#idw, #biz, #des, #tec, #dpw{
-  box-shadow: 1px 1px 5px black;
-}
+
 
 #heading{
   position: relative;
