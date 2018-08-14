@@ -1966,7 +1966,8 @@ fieldset:disabled a.btn {
 .btn-shortcutgreen {
   color: #fff;
   background-color: #00A99D;
-  border-color: #00A99D; }
+  border-color: #00A99D;
+  width: 23%; }
   .btn-shortcutgreen:hover {
     color: #fff;
     background-color: #008379;
@@ -1987,7 +1988,8 @@ fieldset:disabled a.btn {
 .btn-shortcutred {
   color: #fff;
   background-color: #E8592E;
-  border-color: #E8592E; }
+  border-color: #E8592E;
+  width: 23%; }
   .btn-shortcutred:hover {
     color: #fff;
     background-color: #d84418;
@@ -2008,7 +2010,8 @@ fieldset:disabled a.btn {
 .btn-shortcutyellow {
   color: #212529;
   background-color: #FDC81E;
-  border-color: #FDC81E; }
+  border-color: #FDC81E;
+  width: 23%; }
   .btn-shortcutyellow:hover {
     color: #212529;
     background-color: #f3b902;
@@ -2287,8 +2290,8 @@ fieldset:disabled a.btn {
   border-radius: 0.2rem; }
 
 .btn-block {
-  display: block;
-  width: 100%; }
+  /*display: block;*/
+  width: 50%; }
   .btn-block + .btn-block {
     margin-top: 0.5rem; }
 
