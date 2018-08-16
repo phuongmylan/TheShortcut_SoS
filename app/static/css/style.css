@@ -70,6 +70,7 @@ body {
 .fa-bars:hover {
   cursor: pointer; }
 
+
 #countdown {
   width: 465px;
   height: 112px;
@@ -186,3 +187,18 @@ body {
   text-align: center;
   text-transform: uppercase;
   display: inline-block; }
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+  .btn-block {
+    width: 100%;
+  }
+  .lead {
+    /*padding-top: 11px;
+    font-size: 3vh;*/
+  }
+  .text-track {
+    
+    /*font-size: 5vh;*/
+  }
+}
